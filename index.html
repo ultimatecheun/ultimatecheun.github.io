@@ -210,7 +210,7 @@
 <section class="hero" id="top">
   <div class="wrap hero-in">
     <div>
-      <div class="avail"><span class="dot"></span> Open to Summer 2027 internships and full-time roles from Dec 2027</div>
+      <div class="avail"><span class="dot"></span> Open to Summer 2027 internships and full-time roles from May 2027</div>
       <h1>Oluwaseun<br>Adekoya</h1>
       <p class="desc">Robotics Engineer &amp; Ph.D. Candidate based in Cincinnati, OH.</p>
       <p class="sub">I build intelligent motion planning and control for safe human–robot collaboration — the functional-safety side of physical AI — from speed-and-separation monitoring and nonlinear MPC to real hardware.</p>
@@ -250,7 +250,7 @@
     <div class="sec-head">
       <div class="label">Research Focus</div>
       <h2>Five threads in safe human–robot collaboration</h2>
-      <p>My dissertation — <i>Safety-Aware Motion Planning and Control for Human–Robot Collaboration: From Industrial Manipulators to Mobile Teleoperated Robots</i>.</p>
+      <p>My dissertation — <i>Scene Graph-Guided LLM Task Planning and Reinforcement Learning for Safe Robotic Manipulation</i>.</p>
     </div>
     <div class="themes">
       <div class="theme"><div class="g">🧭</div><h3>Path Planning</h3><p>Sampling-based &amp; human-aware planners (PRM, HAMP).</p></div>
@@ -390,7 +390,7 @@
     danger:[["Robot Danger-Zone Modeling — I","safety volume"],["Robot Danger-Zone Modeling — Dome","spherical safety dome"]],
     nmpc:[["NMPC vs. RL-NMPC","learning-augmented control"],["NMPC Modeling — I","nonlinear MPC"],["NMPC Modeling — II","nonlinear MPC"],["NMPC Modeling — III","nonlinear MPC"],["NMPC Modeling — IV","nonlinear MPC"]],
     impedance:[["Impedance Control Modeling — I","compliant contact"],["Impedance Control Modeling — II","compliant contact"],["Impedance Control Modeling — III","compliant contact"]],
-    bonus:[["CNC Tending Cell — Full Automation","robotic machine tending"],["Tube Pick and Place in AutoPipetting","reBot B601-RS · MuJoCo"],["Complete Autonomous Pipetting","reBot B601-RS · AI Agents"],["Dual-Arm Co-Manipulation in AutoPipetting","reBot B601-RS · dual-arm"]],
+    bonus:[["CNC Tending Cell — Full Automation","Fanuc CRX · CNC machine tending"],["Tube Pick and Place in AutoPipetting","Seeed reBot B601-RS · MuJoCo"],["Complete Autonomous Pipetting","Seeed reBot B601-RS · MuJoCo · AI Agents"],["Dual-Arm Co-Manipulation in AutoPipetting","Seeed reBot B601-RS · MuJoCo · dual-arm"]],
     physical:[["Gimbal Mechanism Modeling","hardware"],["3D Printing","fabrication"],["Impedance Control Demo","contact task"],["Humanoid Robot Demo","humanoid"],["Dexterous Teleoperation","teleop"],["Dexterous Teleoperation — II","teleop"],["SINDy Toolbox — Force Estimation","system ID"]]
   };
   const YT={
@@ -420,7 +420,7 @@
     if(raw){
       const full=raw.startsWith("v:"); const id=full?raw.slice(2):raw;
       const u=full?"https://youtu.be/"+id:"https://youtube.com/shorts/"+id;
-      return `<a class="vid live" href="${u}" target="_blank" rel="noopener"><div class="vthumb live"><img class="ytt" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="ytb">▶ YOUTUBE</span><div class="play">${play}</div></div><div class="vmeta"><div class="vt">${t}</div><div class="vs">Watch on YouTube ↗</div></div></a>`;
+      return `<a class="vid live" href="${u}" target="_blank" rel="noopener"><div class="vthumb live"><img class="ytt" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="ytb">▶ YOUTUBE</span><div class="play">${play}</div></div><div class="vmeta"><div class="vt">${t}</div><div class="vs">${s} · Watch on YouTube ↗</div></div></a>`;
     }
     return `<div class="vid" role="button" tabindex="0"><div class="vthumb"><span class="soon">SOON</span><div class="play">${play}</div></div><div class="vmeta"><div class="vt">${t}</div><div class="vs">${s}</div></div></div>`;
   }
@@ -456,10 +456,10 @@
     ["2026","Novel Methodology for 3D Vision-Guided Robotic Fastener Removal","Measurement · under review"],
     ["2026","Formulation and Experimental Validation of Payload-Aware Dynamic Safety Volume for Speed and Separation Monitoring","under review"],
     ["2026","Experimental Evaluation of RGB-D Sensing for Speed & Separation Monitoring in HRC Work Cells","Robotics and Computer-Integrated Manufacturing · under review"],
-    ["2026","Safety-Aware Collision Avoidance Using Probabilistic Roadmaps and Human-Aware Motion Planners","in preparation"],
+    ["2026","Critical Distance-Aware Collision Avoidance Using Probabilistic Roadmaps (PRM) and Human-Aware Motion Planners (HAMP)","under review"],
     ["2026","Safety Implications of Automated Guided Vehicles in the Modern Workplace: Increased or Decreased Potential Hazards?","World Journal of Engineering and Technology 14(1), 29"],
     ["2025","Artificial Intelligence and Public Health Communication in Africa: A Critical Synthesis of Emerging Evidence and Conceptual Gaps","Open Journal of Social Sciences 13(9), 18"],
-    ["2024","A Comparative Study Between Dynamic Programming and Model Predictive Control for Closed-Loop Control Systems","Journal of Mechanical Design · under review"],
+    ["2024","A Comparative Study Between Dynamic Programming and Model Predictive Control for Closed-Loop Control Systems","Journal of Mechanical Design"],
     ["2024","Unsupervised Learning Algorithms for Zero-Day Attacks in Intrusion Detection Systems","IEEE ICCMI"],
     ["2023","Machine Learning Applications in Biomass Pyrolysis","Digital Chemical Engineering"]
   ];
